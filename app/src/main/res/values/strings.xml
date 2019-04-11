@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SesiLima</string>
+    <string name="nama_pemesan">Nama Pemesan</string>
+    <string name="topping">Topping</string>
+    <string name="susu">Susu (tambah 3000)</string>
+    <string name="keju">Keju (tambah 7000)</string>
+    <string name="coklat">Coklat (tambah 5000)</string>
+    <string name="jenis_martabak">Jenis martabak</string>
+    <string name="btn_order">Order</string>
+    <string name="radio_biasa">Biasa</string>
+    <string name="radio_special">Special (tambah 5000)</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_minus">-</string>
+    <string name="jumlah_pembelian">Jumlah pembelian</string>
+    <string name="harga_awal_martabak">Harga Martabak 15.000</string>
+</resources>

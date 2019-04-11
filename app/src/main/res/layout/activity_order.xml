@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13pt"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/harga_awal_martabak" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama_pemesan" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/topping" />
+
+    <CheckBox
+        android:id="@+id/chkSusu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/susu" />
+
+    <CheckBox
+        android:id="@+id/chkKeju"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keju" />
+
+    <CheckBox
+        android:id="@+id/chkCoklat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/coklat" />
+
+    <RadioGroup
+        android:id="@+id/rgTipeMartabak"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jenis_martabak" />
+
+        <RadioButton
+            android:id="@+id/radioBiasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_biasa" />
+
+        <RadioButton
+            android:id="@+id/radioSpecial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_special" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/jumlah_pembelian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_minus" />
+
+        <EditText
+            android:id="@+id/edCount"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_plus" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_order" />
+
+</LinearLayout>
