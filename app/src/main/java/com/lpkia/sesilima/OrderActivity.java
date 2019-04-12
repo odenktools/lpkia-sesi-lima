@@ -51,6 +51,7 @@ public class OrderActivity extends AppCompatActivity {
 
                 // Setup harga tambahan untuk susu
                 buttonView.setTag(3000f);
+
                 Object tag = buttonView.getTag();
                 if (isChecked) {
                     hargaAwal += (float) tag;
